@@ -32,6 +32,7 @@ class samba::server($bind_interfaces_only = 'yes',
                     $usershare_allow_guests = '',
                     $users = {},
                     $workgroup = '',
+                    $home_readonly='',
                     $interfaces = '' ) {
 
   include samba::server::install
