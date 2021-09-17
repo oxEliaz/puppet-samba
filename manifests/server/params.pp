@@ -8,7 +8,10 @@ class samba::server::params {
         'Debian': {
           case $::operatingsystemmajrelease {
             '8' : { $service_name = 'smbd' }
-            default: { $service_name = 'samba' }
+            default: { 
+                        $service_name = 'smbd' 
+                        $nmbd_name = undef
+                     }
           }
         }
         'Ubuntu': {
