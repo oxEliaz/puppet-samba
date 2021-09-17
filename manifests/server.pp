@@ -31,7 +31,7 @@ class samba::server($bind_interfaces_only = 'yes',
                     $unix_password_sync = '',
                     $usershare_allow_guests = '',
                     $users = {},
-                    $workgroup = '',
+                    $workgroup = '', #not implemented yet
                     $home_readonly='',
                     $interfaces = '' ) {
 
